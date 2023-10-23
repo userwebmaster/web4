@@ -1,0 +1,442 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scrollbar-color: #3D2760;
+    background-size: cover;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-repeat: no-repeat;
+   }
+@font-face {
+    font-family: 'League';
+    src: url(fonts/LeagueSpartan-Bold.ttf);
+}
+mark{
+    background-color: red;
+}
+.red{
+    color: red;
+}
+:root{
+--violet: #92747F;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    height: 700vh;
+    display: grid;  
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.19fr 0.81fr 1fr 2fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "nav"
+    "intro"
+    "about"
+    "roadmap"
+    "tokenomics"
+    "howtobuy"
+    "footer";
+    background-color: black;
+    background-image: url(images/bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: 'League';
+}
+h1{
+    color: white;
+    font-size: 700%;
+}
+header{
+}
+nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    grid-area: nav;
+    gap: 2%;
+    padding: 0% 5%;
+}
+.nav-element{
+    width: 12%;
+    height: auto;
+    text-align: center;
+    font-size: 150%;
+}
+a {
+    text-decoration: none;
+}
+nav p {
+    color: white;
+}
+nav p:hover {
+    cursor: pointer;
+    color: var(--violet);
+}
+.nav-logo-img{
+    width: 100%;
+    height: 100%;
+}
+#intro{
+    grid-area: intro;
+}
+.intro-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    justify-content: top;
+    align-items: center;
+    gap: 1%;
+}
+.welcome-text{
+    width: 60%;
+    height: 50%;
+    line-height: normal;
+}
+.welcome{
+    width: 100%;
+    height: 33%;
+}
+.name{
+    text-align: right;
+    height: 33%;
+}
+.chart-buy-btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 14%;
+    width: 45%;
+    height: 10%;
+    font-size: large;
+}
+.chart-btn, .buy-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/short-btn.png);
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25%;
+    height: 100%;
+    color: white;
+}
+.chart-btn:hover{
+    cursor: pointer;
+    color: pink;
+    background-size: 90%;
+}
+.buy-btn:hover{
+    cursor: pointer;
+    color: pink;
+    background-size: 90%;
+}
+.jointg-btn-container{
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 14%;
+    width: 45%;
+    height: 10%;
+}
+.jointg-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/long-btn.png);
+    background-size: 82%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60%;
+    height: 100%;
+    color: white;
+}
+.jointg-btn:hover{
+    cursor: pointer;
+    color: pink;
+    background-size: 87%;
+}
+#about{
+    grid-area: about;
+}
+.about-container{
+    width: 100%;
+    height: 100%;
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.text-container{
+    width: 45%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: top;
+    gap: 10%;
+}
+
+.text{
+    width: auto;
+    height: auto;
+}
+.text p{
+    color: white;
+    font-size: 350%;
+    line-height: 90%;
+    font-family: 'League';
+}
+.contract{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 14%;
+    gap: 2%;
+}
+.contract-ca{
+}
+.contract-ca p{
+    color: white;
+    font-size: 200%;
+}
+.contract-text{
+}
+.contract-text p{
+    color: white;
+    font-size: 150%;
+}
+.contract-btn{
+    width: 10%;
+    height: 100%;
+    background-size: 68%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(images/copy-btn.png);
+}
+.contract-btn:hover{
+    cursor: pointer;
+    background-size: 73%;
+    background-image: url(images/copy-btn-after.png);
+}
+.img-container{
+    width: 45%;
+    height: 100%;
+    background-position: center;
+    background-size: 100%;
+    background-image: url(images/img1.png);
+}
+#roadmap{
+    display: flex;
+    align-items: end;
+    grid-area: roadmap;
+}
+.roadmap-container{
+    padding: 0% 10%;
+    width: 100%;
+    height: 90%;
+    background-position: center;
+    background-size: contain;
+    background-image: url(images/roadmap.png);
+}
+#tokenomics{
+    display: flex;
+    align-items: end;
+    grid-area: tokenomics;
+}
+.tokenomics-container{
+    padding: 0% 10%;
+    width: 100%;
+    height: 90%;
+    background-position: center;
+    background-size: contain;
+    background-image: url(images/tokenomics.png);
+}
+#howtobuy{
+    grid-area: howtobuy;
+}
+.howtobuy-container{
+    padding: 0% 10%;
+    width: 100%;
+    height: 90%;
+    background-position: center;
+    background-size: 85%;
+    background-image: url(images/howtobuy.png);
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    grid-area: footer;
+}
+.img-joinus-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 80%;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(images/logo.png);
+}
+.joinus{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+}
+.joinus-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/short-btn.png);
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 45%;
+    height: 100%;
+    color: white;
+}
+.joinus-btn p{
+    font-size: 150%;
+}
+.joinus-btn:hover{
+    cursor: pointer;
+    color: #B192C1;
+    background-size: 90%;
+}
+.line{
+    width: 100%;
+    height: 0.5%;
+    opacity: 17%;
+    background-color: white;
+}
+.end-container{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3%;
+}
+.logo-name-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+.logo{
+    background-image: url(images/logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+    height: 100%;
+}
+.name{
+    width: 15%;
+    height: auto;
+}
+.name p{
+    font-size: 200%;
+    color: white;
+}
+.end-nav{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.end-nav p{
+    font-size: 120%;
+    color: white;
+}
+.end-nav p:hover{
+    color: var(--violet);
+}
+.end-nav-element{
+    text-align: center;
+    width: 20%;
+}
+.end-socials-arrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    gap: 5%;
+}
+.end-socials{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.tg-img{
+    width: 16%;
+    height: 25%;
+    background-image: url(images/tg.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tg-img:hover{
+    cursor: pointer;
+    background-image: url(images/tg-after.png);
+}
+.tw-img{
+    width: 16%;
+    height: 25%;
+    background-image: url(images/tw.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tw-img:hover{
+    cursor: pointer;
+    background-image: url(images/tw-after.png);
+}
+.end-arrow{
+    width: 10%;
+    height: 95%;
+    background-image: url(images/arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.end-arrow:hover{
+    cursor: pointer;
+    background-image: url(images/arrow-after.png);
+}
+.made-by p{
+    color: white;
+    font-size: 80%;
+}
+
