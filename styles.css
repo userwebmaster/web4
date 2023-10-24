@@ -347,6 +347,7 @@ footer{
     align-items: center;
     width: 40%;
     height: 100%;
+    gap: 5%;
 }
 .logo{
     background-image: url(images/logo.png);
