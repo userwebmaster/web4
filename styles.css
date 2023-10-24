@@ -37,7 +37,7 @@ body{
     "footer";
     background-color: black;
     background-image: url(images/bg.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     font-family: 'League';
 }
